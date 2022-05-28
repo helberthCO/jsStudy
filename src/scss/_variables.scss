@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500;600&display=swap');
+
+// Colors
+$white: #fff;
+$black: #222;
+$primary-color: #0c1110;
+$secondary-color: #00aa92;
+$third-color: #4f9ce2;
+$shade-white: #eafdf9;
+$circle-size: 25vh;
+
+// Fonts
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+@mixin title-font {
+  font: {
+    family: $secondary-font;
+    weight: 600;
+  }
+}
+
+@mixin text-font {
+  font: {
+    family: $primary-font;
+    weight: 300;
+  }
+}
+
+@mixin button {
+  @include title-font;
+  padding: 0.8em 2em;
+}
